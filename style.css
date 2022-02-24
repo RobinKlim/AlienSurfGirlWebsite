@@ -1,0 +1,965 @@
+/*
+=======================
+SHARED CSS
+=======================
+*/
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "poppins", 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 0.1 em;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  scroll-behavior: smooth;
+  cursor: url('/images/rocketcursor.png'), auto;	
+}
+
+@font-face {
+  font-family: "streamsterregular";
+  src: url("Streamster.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/Poppins-Light.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  padding: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+
+h2 {
+  text-align: center;
+  font-family: streamsterregular, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.5rem;
+}
+
+.inner-height {
+  max-width: 700px;
+  margin: 0 auto 0 auto;
+}
+
+
+/*
+=======================
+Landing Page / Home
+=======================
+*/
+
+.background-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-image: url(images/LandingPage_Beam.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation: myfirst 5s ease-out;
+}
+
+@keyframes myfirst {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.landing-page {
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);  
+  width: auto;
+  background-color: black;
+  background-image: url(images/landingpage_without_lightbeam.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.landing-page-container {
+  padding-top: 25vh;
+  padding-top: calc(var(--vh, 1vh) * 25);  
+  height: 75vh;
+  height: calc(var(--vh, 1vh) * 75);  
+  width: auto;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+}
+
+.spacer {
+  height: 25vh;
+  height: calc(var(--vh, 1vh) * 25);  
+}
+
+.spacer1 {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0));  
+  transition: all .6s cubic-bezier(.19,1,.22,1);
+  z-index: 10;
+}
+
+.alienSurfGirlLogo {
+  height: 40%;
+}
+
+.spacer2 {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0));
+  transition: all .6s cubic-bezier(.19,1,.22,1);
+  z-index: 10;
+}
+
+/*
+=======================
+About
+=======================
+*/
+.about-music-container {
+  background: url('/images/gradient_v1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flow-root;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);  
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  transform: translateY(calc(var(--vh, 1vh) * 25));
+}
+
+.about-music-container img {
+  margin: 0 5% 0 5%;
+  max-width: 90%;
+}
+
+.spotify-player {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding-bottom: 1rem;
+}
+
+.about, .music {
+  margin: 3rem 5% 0.5rem 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+.about-container img {
+  padding-bottom: 2rem;
+}
+
+.about-music-container .image {
+  display: none;
+}
+
+/*
+=======================
+Alien Surf Girl TV
+=======================
+*/
+
+.tv {
+  position: relative;
+  display: flow-root;
+  z-index: 1;
+  background: url(/images/stars_background.webp);
+}
+
+.video-padding {
+  padding: 0 5% 5% 5%;
+  margin: 0 5% 0 5%;
+  max-width: 90%;
+}
+
+.llyv {
+  box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.3);     
+}
+
+.tv h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.tv .inner-height {
+  position: relative;
+}
+
+#video-animation {
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+}
+/*
+=======================
+Shows
+=======================
+*/
+
+.showsAndContact {
+  background: url('/images/gradient_v1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  display: flow-root;
+}
+
+.shows {
+  margin: 10% 10% 0.5rem 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+.showEvent p {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.date {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+.eventName {
+  opacity: 1;
+}
+
+.location, .eventName {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.showEvent {
+  border-top: solid rgba(255, 255, 255, 0.2) 1px;
+  padding: 2rem 0;
+}
+
+.seeEvent {
+  color: #F4AD09;
+  transition: ease 0.2s;
+}
+
+.seeEvent::after { 
+  content: url(/images/arrow.svg);
+}
+
+.seeEvent:hover, .seeEvent:focus {
+  transform: scale(1.2);
+  cursor: url('/images/rocketcursor2.png'), pointer;
+}
+
+.contact {
+  min-height: 100vh;
+  padding-top: 3rem;
+}
+
+#shows-animation {
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+}
+
+/*
+=======================
+Contact
+=======================
+*/
+
+.social-media {
+  display: flex;
+  margin: 5rem auto 0 auto;
+  width: 65%;
+  max-width: 350px;
+  justify-content: space-between;
+  transition: 2s;
+}
+
+.social-media img {
+  margin: 10px auto 0 auto;
+  height: 25px;
+  width: auto;
+  color: #F4AD09;
+  transition: all 0.2s;
+}
+
+.social-media a {
+  transition: all 0.2s;
+}
+
+.social-media img:active {
+  filter: invert(58%) sepia(91%) saturate(533%) hue-rotate(2deg) brightness(105%) contrast(93%);
+}
+
+.social-media a:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  filter: invert(58%) sepia(91%) saturate(533%) hue-rotate(2deg) brightness(105%) contrast(93%);
+  cursor: url('/images/rocketcursor2.png'), pointer;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  padding: 10rem 0 7rem 0; 
+}
+
+.bottom p {
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.newsletter, .mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+button {
+  background: none;
+  color: #F4AD09;
+  border: 3px solid #F4AD09;  
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: ease 0.2s;
+}
+
+button:hover, button:focus {
+  transform: scale(1.1);
+  background: #F4AD09;
+  color: white;
+  cursor: url('/images/rocketcursor2.png'), pointer;
+}
+
+.imprint {
+  position: fixed;
+  height: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .85);
+  z-index: 20;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.imprint p {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.imprint-open {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);  
+  overflow: scroll;
+}
+
+.imprint .menu-button-container {
+  position: static;
+  margin: 2rem auto 2rem auto;
+}
+
+.fat {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cross-burger {
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 20px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.cross-burger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: white;
+  height: 2px;
+  width: 20px;
+  border-radius: 2px;
+  transform: rotate(90deg);
+}
+
+/*
+=======================
+Nav
+=======================
+*/
+
+.nav-page {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 0vh;
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  background: url(/images/stars_background.webp);
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+  transition: ease-out 0.3s;
+}
+
+.nav-page2 {
+  height: 100vh;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%; 
+  transition: 0.2s;
+}
+
+.asgLogo {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  flex-basis: 90%;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: 0.1s;
+  display: inline-block;
+}
+
+.nav-links a:active, .nav-links a:hover, .imprint-text:hover, .imprint-text:focus {
+  color: #F4AD09;
+  transform: scale(1.2);
+  cursor: url('/images/rocketcursor2.png'), pointer;
+}
+
+.nav-spacer {
+  flex-basis: 25%;
+}
+
+.nav-container .social-media {
+  flex-basis: 20; 
+  padding: 1rem 0 1rem 0;
+  margin-top: 2rem;
+}
+
+/*
+=======================
+NavBurger
+=======================
+*/
+
+.menu-button-container:hover, .menu-button-container:focus {
+  transform: scale(1.2);
+  cursor: url('/images/rocketcursor2.png'), pointer;
+}
+
+.menu-button-container:active {
+  background-color: #F4AD09;
+}
+
+.menu-button-container img {
+  padding: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-button-container {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(152, 120, 179);
+  border: none;
+  height: 45px;
+  width: 45px;
+  z-index: 10;
+  transition: all 0.2s;
+  z-index: 15;
+}
+
+.menu-button-burger {
+  width: 20px;
+  height: 2px;
+  background: white;
+  border-radius: 3px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-button-burger::before, .menu-button-burger::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: white;
+  border-radius: 3px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-button-burger::after {
+  transform: translateY(5px);
+}
+
+.menu-button-burger::before {
+  transform: translateY(-5px);
+}
+
+.menu-button-container.open .menu-button-burger {
+  transform: translateX(-20px);
+  background: transparent;
+}
+.menu-button-container.open .menu-button-burger::before {
+  transform: rotate(45deg) translate(14px, -14px);
+
+}
+.menu-button-container.open .menu-button-burger::after {
+  transform: rotate(-45deg) translate(14px, 14px);
+}
+
+
+.effect1, .effect2, .effect3 {
+  display: none;
+}
+
+/*
+=======================
+Breakpoints
+=======================
+*/
+
+@media (min-width: 992px) {
+
+  /*
+=======================
+Layout
+=======================
+*/
+  .grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 100vh auto auto;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-all {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .landing-page-container {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  #music {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-position: 0 top;
+    transition: all .8s ease-in;
+    transform: translateY(calc(var(--vh, 1vh) * 0));
+  }
+
+  .tv {
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .showsAndContact {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .landing-page {
+    height: 100%;
+  }
+  
+  .spacer, .nav-spacer {
+    display: none;
+  }
+
+  .social-media img {
+    height: 30px;
+  }
+
+    /*
+=======================
+Navigation
+=======================
+*/
+
+  .nav-page {
+    height: 100%;
+    width: 260px;
+    background-image: none;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+    clip-path: inset(0px -50px 0px 0px);
+  }
+
+  .nav-container {
+    height: 100%;
+    flex-basis: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-container > a {
+    display: flex;
+    width: 35%;
+  }
+
+  .asgLogo {
+    display: block;
+    transition: all 0.2s;
+    width: 100%;
+    transition: all .8s cubic-bezier(.19,1,.22,1);
+  }
+
+  .logo-background {
+    background: url("/images/AlienSurfGirl_Logotype_stars.png");
+    background-size: contain;
+    filter: brightness(2);
+    transition: all .8s cubic-bezier(.19,1,.22,1);
+  }
+
+
+  .logo-background:hover {
+    transform: scale(1.1);
+  }
+
+  .logo-background:hover .asgLogo {
+    cursor: url('/images/rocketcursor2.png'), pointer;
+    opacity: 0;
+  }
+
+  .nav-links {
+    flex-basis: 30%;
+  }
+
+  .nav-container .social-media img {
+    height: 20px;
+  }
+
+
+/*
+=======================
+Hover Effect TV
+=======================
+*/
+
+
+  .tv {
+    background-color: rgb(10, 10, 10);
+    background-image: none;
+  }
+
+  .tv-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/images/stars_background.webp') ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+    opacity: 0;
+    transition: 3s ease-out;
+  }
+
+  .tv:hover .tv-background{
+    opacity: 1;
+  }
+
+  .effect1 {
+    width: 100%;
+  }
+
+  #video-cursor > * {
+    transition: all .6s ease-in-out;
+  }
+
+  #video-cursor:hover > *{
+    cursor: url('/images/rocketcursor2.png'), pointer;
+    filter: brightness(70%) contrast(110%);;
+  }
+
+  #video-cursor2:hover > *{
+    cursor: url('/images/rocketcursor2.png'), pointer;
+    filter: brightness(70%) contrast(110%);;
+  }
+
+  #video-cursor3:hover > *{
+    cursor: url('/images/rocketcursor2.png'), pointer;
+    filter: brightness(70%) contrast(110%);;
+  }
+
+  #video-cursor2 > * {
+    transition: all .6s ease-in-out;
+  }
+
+  #video-cursor3 > * {
+    transition: all .6s ease-in-out;
+  }
+
+  .llyv-play-btn {
+    cursor: url('/images/rocketcursor2.png'), pointer;
+  }
+
+  #about-container {
+    transition: all cubic-bezier(.17,.84,.44,1) .6s;
+  }
+
+  #music-container {
+    transition: all cubic-bezier(.17,.84,.44,1) .6s;
+  }
+
+}
+
+@media (min-width: 1350px) {
+
+  .nav-page {
+    width: 300px;
+  }
+
+  .grid {
+    grid-template-columns: 300px 1fr;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .videoSum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 25px;
+    margin: 0rem auto 5rem auto;
+  }
+
+
+  .video-padding1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .video-padding2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .video-padding3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .video-padding{
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+
+  .tv .inner-height {
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .tv h2 {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+
+  .about-music-container .inner-height {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about, .music {
+    margin: 0;
+  }
+
+   .about-container {
+    display: flex;
+  }
+
+  .about-music-container {
+    padding: 100px 0 100px 0;
+  }
+
+  #about {
+    margin: 1%;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  .image-container {
+    margin: 1%;
+  }
+
+  .about-music-container img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    max-width: 100%;
+    height: auto; 
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    align-self: flex-start
+  }
+
+  .music-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .music2 {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+  }
+
+  .spotify-player {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .about-music-container .cover-one, .about-music-container .cover-two, .about-music-container .cover-three {
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .about-music-container .image {
+    display: block;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .overlay-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all cubic-bezier(.17,.84,.44,1) .6s;
+  }
+
+  .overlay-image-blur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .overlay-image > * {
+    transform: translateY(20px);
+    transition: all cubic-bezier(.17,.84,.44,1) .6s;
+  }
+
+  .overlay-image:hover {
+    opacity: 1;
+  }
+
+  .overlay-image:hover > * {
+    transform: translateY(0px);
+  }
+
+  .music {
+    margin: 6px;
+    width: 300px;
+    margin: 1%;
+  }
+}
+
+
+
+/*
+.site-content a[href^="http"]::after { content: " \2197"; }
+
+.site-content a:link { color: #0b74b8; } 
+.site-content a:visited { color: #36aade; } 
+.site-content a:hover, .site-content a:focus { color: #f5662e; }
+.site-content a:active { color: #d90000; }
+
+  /*
+p {
+  font-family: streamsterregular, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3rem;
+}
+.nav-page {
+  position: fixed;
+  z-index: 50;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Surf Girl Band Homepage</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="llyv.min.css" />
+    <link rel="icon" href="/images/AlienSurfGirl_Logotype_black_favicon-.svg" />
+  </head>
+
+  <body id="top">
+    <div class="grid" id="grid">
+      <nav class="nav-all">
+        <div class="nav-page" id="nav-page">
+          <div class="nav-spacer"></div>
+          <div class="nav-container" id="nav-container">
+            <a href="#top">
+              <div class="logo-background">
+                <img
+                  class="asgLogo"
+                  id="asgLogo"
+                  src="/images/AlienSurfGirl_Logotype_before_stars.png"
+                  alt="Alien Surf Girl Logo"
+                />
+              </div>
+            </a>
+            <ul class="nav-links">
+              <li>
+                <a
+                  class="about-link"
+                  href="#about-container"
+                  onclick="toggleMenu()"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#music-container" onclick="toggleMenu()">Music</a>
+              </li>
+              <li><a href="#videos" onclick="toggleMenu()">Videos</a></li>
+              <li><a href="#shows" onclick="toggleMenu()">Shows</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+            <div class="social-media">
+              <a
+                href="https://open.spotify.com/artist/5HJnjbg0jin1bXgPVKewQi?si=So8VMe_dS0CDYV2GzRmHuQ&dl_branch=1"
+              >
+                <img src="/images/spotify.svg" alt="" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCDReVbsgHdMurAxZqj661hg"
+              >
+                <img src="/images/youtube.svg" alt="" />
+              </a>
+              <a href="https://www.instagram.com/aliensurfgirlofficial">
+                <img src="/images/instagram.svg" alt="" />
+              </a>
+              <a href="https://www.facebook.com/aliensurfgirl/">
+                <img src="/images/facebook.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/aliensurfgirl_?lang=en">
+                <img src="/images/twitter.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="nav-spacer"></div>
+        </div>
+      </nav>
+
+      <div>
+        <div class="spacer spacer1" id="stickyHeader">
+          <img
+            class="alienSurfGirlLogo"
+            id="alienSurfGirlLogo"
+            src="images/AlienSurfGirl_Logotype_white.svg"
+            alt="Alien Surf Girl Logo Band"
+          />
+        </div>
+      </div>
+
+      <div class="landing-page-container" id="landing-page-container">
+        <div class="landing-page">
+          <div class="background-overlay"></div>
+        </div>
+      </div>
+
+      <div class="about-music-container" id="music">
+        <div class="inner-height">
+          <div class="about-container" id="about-container">
+            <div class="about" id="about">
+              <h2>About</h2>
+              <p>
+                When Robin (Guitar), Philipp (Bass), Jonas (Vocals), Morten
+                (Drums) and Jana (Keys) met in Hamburg in 2020, they fell
+                musically in love with each other. <br /><br />
+                Within their songwriting process they are always chasing moments
+                of creative flow.
+              </p>
+            </div>
+            <div class="image-container">
+              <img
+                src="/images/alien_surf_girl_photo_caravan500.webp"
+                alt="Alien Surf Girl Band Caravan"
+                srcset="
+                  /images/alien_surf_girl_photo_caravan500.webp   500w,
+                  /images/alien_surf_girl_photo_caravan1000.webp 1000w,
+                  /images/alien_surf_girl_photo_caravan2000.webp 2000w
+                "
+              />
+            </div>
+          </div>
+
+          <div class="music-container" id="music-container">
+            <div class="music">
+              <h2>Music</h2>
+              <p>
+                Surprisingly sparkling, unexpectedly fruity. Multi-layered
+                taste. Always intense, but never too sweet. Light as a feather
+                in the finish.
+                <br /><br />
+
+                Click the play button to open a world so full of energy that it
+                condenses on the outside. Not resealable. This experience wants
+                to be savored to the last sip.
+              </p>
+            </div>
+            <div class="music2">
+              <div class="spotify-player">
+                <iframe
+                  src="https://open.spotify.com/embed/artist/5HJnjbg0jin1bXgPVKewQi?theme=0"
+                  loading="lazy"
+                  width="100%"
+                  height="175px"
+                  frameborder="0"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                ></iframe>
+              </div>
+              <div class="image">
+                <img
+                  class="cover-one"
+                  src="/images/PleaseDontPlayMe.jpg"
+                  alt="Please Don'T Play Me Artwork"
+                />
+                <div class="overlay-image overlay-image-blur">
+                  <h3>Please Don't Play Me</h3>
+                  <p>
+                    "With time I got a metal heart, without it I would fall
+                    apart"
+                  </p>
+                </div>
+              </div>
+              <div class="image">
+                <img
+                  class="cover-two"
+                  src="/images/Recognition.jpg"
+                  alt="Recognition Artwork"
+                />
+                <div class="overlay-image overlay-image-blur">
+                  <h3>Recognition</h3>
+                  <p>"I hate how I look but love when I look good"</p>
+                </div>
+              </div>
+              <div class="image">
+                <img
+                  class="cover-three"
+                  src="/images/UpInSpace.jpg"
+                  alt="Up in Space Artwork"
+                />
+                <div class="overlay-image overlay-image-blur">
+                  <h3>Up in Space</h3>
+                  <p>"Do you hear the ocean talking? What does it say?"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tv" id="videos">
+        <div class="tv-background"></div>
+        <div class="inner-height" id="video-animation">
+          <h2>Videos</h2>
+          <div class="videoSum">
+            <div class="video-padding video-padding1">
+              <div class="llyv" id="video-cursor" data-id="-1al_Yx9fyQ"></div>
+            </div>
+            <div class="video-padding video-padding2">
+              <div class="llyv" id="video-cursor2" data-id="d9rJV-4Oj4w"></div>
+            </div>
+            <div class="video-padding video-padding3">
+              <div class="llyv" id="video-cursor3" data-id="Wz_5TtQkmXk"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showsAndContact" id="shows">
+        <div class="inner-height" id="shows-animation">
+          <div class="shows">
+            <div class="shows-container">
+              <h2>Shows</h2>
+
+              <div class="showEvent">
+                <p>There are no shows scheduled at the moment.</p>
+              </div>
+              <!--
+              <div class="showEvent">
+                <p class="date">28 Aug 2021</p>
+                <p class="location">Nürnberg, Germany</p>
+                <p class="eventName">RÜBEZAHL FESTIVAL</p>
+                <p class="seeEvent">See event &nbsp</p>
+              </div>
+
+              <div class="showEvent">
+                <p class="date">28 Aug 2021</p>
+                <p class="location">Nürnberg, Germany</p>
+                <p class="eventName">RÜBEZAHL FESTIVAL</p>
+                <p class="seeEvent">See event &nbsp</p>
+              </div>
+                      -->
+            </div>
+          </div>
+
+          <div class="contact" id="contact">
+            <!--
+            <div class="newsletter">
+              <p>Stay up to date with our band</p>
+              <button>Subscribe to newsletter</button>
+            </div>
+-->
+
+            <div class="mail">
+              <p>Reach out to us</p>
+              <a href="mailto:info@aliensurfgirl.official@gmail.com">
+                <button>Contact by email</button>
+              </a>
+              <p>aliensurfgirl.official@gmail.com</p>
+            </div>
+            <div class="social-media">
+              <a
+                href="https://open.spotify.com/artist/5HJnjbg0jin1bXgPVKewQi?si=So8VMe_dS0CDYV2GzRmHuQ&dl_branch=1"
+              >
+                <img src="/images/spotify.svg" alt="" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCDReVbsgHdMurAxZqj661hg"
+              >
+                <img src="/images/youtube.svg" alt="" />
+              </a>
+              <a href="https://www.instagram.com/aliensurfgirlofficial">
+                <img src="/images/instagram.svg" alt="" />
+              </a>
+              <a href="https://www.facebook.com/aliensurfgirl/">
+                <img src="/images/facebook.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/aliensurfgirl_?lang=en">
+                <img src="/images/twitter.svg" alt="" />
+              </a>
+            </div>
+            <div class="bottom">
+              <p class="imprint-text">Impressum</p>
+              <p>@2021 Alien Surf Girl. All rights reserved.</p>
+              <div class="imprint">
+                <div class="menu-button-container" onclick="toggleImprint()">
+                  <div class="cross-burger"></div>
+                </div>
+                <p>
+                  <span class="fat">Impressum</span>
+                  <br /><br />
+                  Angaben gemäß § 5 TMG:
+                  <br /><br />
+                  Alien Surf Girl GbR vertreten durch Philipp Burkart, Robin
+                  Klimczak, Jonas Paelt, Tatjana Friedrich und Morten Lagemann
+                  Email: aliensurfgirl.official@gmail.com Internet:
+                  www.aliensurfgirl.com
+                  <br /><br />
+                  Wenn vorhanden: Umsatzsteueridentifikationsnummer gemäß § 27a
+                  Umsatzsteuergesetz: DE 42/651/02242
+                  <br /><br />
+                  <span class="fat">Haftungsausschluss:</span>
+                  <br /><br />
+                  Haftung für Inhalte
+                  <br />
+                  Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+                  erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität
+                  der Inhalte können wir jedoch keine Gewähr übernehmen. Als
+                  Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
+                  Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+                  verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+                  Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+                  gespeicherte fremde Informationen zu überwachen oder nach
+                  Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+                  hinweisen. Verpflichtungen zur Entfernung oder Sperrung der
+                  Nutzung von Informationen nach den allgemeinen Gesetzen
+                  bleiben hiervon unberührt. Eine diesbezügliche Haftung ist
+                  jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
+                  Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+                  Rechtsverletzungen werden wir diese Inhalte umgehend
+                  entfernen.
+                  <br /><br />
+                  Haftung für Links
+                  <br />
+                  Unser Angebot enthält Links zu externen Webseiten Dritter, auf
+                  deren Inhalte wir keinen Einfluss haben. Deshalb können wir
+                  für diese fremden Inhalte auch keine Gewähr übernehmen. Für
+                  die Inhalte der verlinkten Seiten ist stets der jeweilige
+                  Anbieter oder Betreiber der Seiten verantwortlich. Die
+                  verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf
+                  mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren
+                  zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente
+                  inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
+                  konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
+                  Bei Bekanntwerden von Rechtsverletzungen werden wir derartige
+                  Links umgehend entfernen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="spacer spacer2" id="stickyFooter">
+        <div
+          class="menu-button-container"
+          id="menu-button-container"
+          onclick="toggleMenu()"
+        >
+          <div class="menu-button-burger"></div>
+        </div>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="llyv.min.js"></script>
+  </body>
+  <footer></footer>
+</html>
