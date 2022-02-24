@@ -17,7 +17,7 @@ html {
   background-color: rgb(5, 5, 5);
   color: white;
   scroll-behavior: smooth;
-  cursor: url('/images/rocketcursor.png'), auto;	
+  cursor: url('./images/rocketcursor.png'), auto;	
 }
 
 @font-face {
@@ -29,7 +29,7 @@ html {
 
 @font-face {
   font-family: "poppins";
-  src: url("/Poppins-Light.ttf") format("woff2");
+  src: url("Poppins-Light.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -69,7 +69,7 @@ Landing Page / Home
   height: 100%;
   width: 100%;
   background-color: black;
-  background-image: url(images/LandingPage_Beam.jpg);
+  background-image: url(./images/LandingPage_Beam.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -87,7 +87,7 @@ Landing Page / Home
   height: calc(var(--vh, 1vh) * 50);  
   width: auto;
   background-color: black;
-  background-image: url(images/landingpage_without_lightbeam.jpg);
+  background-image: url(./images/landingpage_without_lightbeam.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -141,7 +141,7 @@ About
 =======================
 */
 .about-music-container {
-  background: url('/images/gradient_v1.jpg');
+  background: url('./images/gradient_v1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -187,7 +187,7 @@ Alien Surf Girl TV
   position: relative;
   display: flow-root;
   z-index: 1;
-  background: url(/images/stars_background.webp);
+  background: url(./images/stars_background.webp);
 }
 
 .video-padding {
@@ -219,7 +219,7 @@ Shows
 */
 
 .showsAndContact {
-  background: url('/images/gradient_v1.jpg');
+  background: url('./images/gradient_v1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: top;
@@ -263,12 +263,12 @@ Shows
 }
 
 .seeEvent::after { 
-  content: url(/images/arrow.svg);
+  content: url(./images/arrow.svg);
 }
 
 .seeEvent:hover, .seeEvent:focus {
   transform: scale(1.2);
-  cursor: url('/images/rocketcursor2.png'), pointer;
+  cursor: url('./images/rocketcursor2.png'), pointer;
 }
 
 .contact {
@@ -315,7 +315,7 @@ Contact
   cursor: pointer;
   transform: scale(1.4);
   filter: invert(58%) sepia(91%) saturate(533%) hue-rotate(2deg) brightness(105%) contrast(93%);
-  cursor: url('/images/rocketcursor2.png'), pointer;
+  cursor: url('./images/rocketcursor2.png'), pointer;
 }
 
 .bottom {
@@ -354,7 +354,7 @@ button:hover, button:focus {
   transform: scale(1.1);
   background: #F4AD09;
   color: white;
-  cursor: url('/images/rocketcursor2.png'), pointer;
+  cursor: url('./images/rocketcursor2.png'), pointer;
 }
 
 .imprint {
@@ -425,7 +425,7 @@ Nav
   height: 0vh;
   width: 100%;
   background-color: rgb(10, 10, 10);
-  background: url(/images/stars_background.webp);
+  background: url(./images/stars_background.webp);
   background-size: cover;
   z-index: 10;
   overflow: hidden;
@@ -467,7 +467,7 @@ Nav
 .nav-links a:active, .nav-links a:hover, .imprint-text:hover, .imprint-text:focus {
   color: #F4AD09;
   transform: scale(1.2);
-  cursor: url('/images/rocketcursor2.png'), pointer;
+  cursor: url('./images/rocketcursor2.png'), pointer;
 }
 
 .nav-spacer {
@@ -488,7 +488,7 @@ NavBurger
 
 .menu-button-container:hover, .menu-button-container:focus {
   transform: scale(1.2);
-  cursor: url('/images/rocketcursor2.png'), pointer;
+  cursor: url('./images/rocketcursor2.png'), pointer;
 }
 
 .menu-button-container:active {
@@ -668,7 +668,7 @@ Navigation
   }
 
   .logo-background {
-    background: url("/images/AlienSurfGirl_Logotype_stars.png");
+    background: url("./images/AlienSurfGirl_Logotype_stars.png");
     background-size: contain;
     filter: brightness(2);
     transition: all .8s cubic-bezier(.19,1,.22,1);
@@ -680,7 +680,7 @@ Navigation
   }
 
   .logo-background:hover .asgLogo {
-    cursor: url('/images/rocketcursor2.png'), pointer;
+    cursor: url('./images/rocketcursor2.png'), pointer;
     opacity: 0;
   }
 
@@ -709,7 +709,7 @@ Hover Effect TV
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/images/stars_background.webp') ;
+    background: url('./images/stars_background.webp') ;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
@@ -731,17 +731,17 @@ Hover Effect TV
   }
 
   #video-cursor:hover > *{
-    cursor: url('/images/rocketcursor2.png'), pointer;
+    cursor: url('./images/rocketcursor2.png'), pointer;
     filter: brightness(70%) contrast(110%);;
   }
 
   #video-cursor2:hover > *{
-    cursor: url('/images/rocketcursor2.png'), pointer;
+    cursor: url('./images/rocketcursor2.png'), pointer;
     filter: brightness(70%) contrast(110%);;
   }
 
   #video-cursor3:hover > *{
-    cursor: url('/images/rocketcursor2.png'), pointer;
+    cursor: url('./images/rocketcursor2.png'), pointer;
     filter: brightness(70%) contrast(110%);;
   }
 
@@ -754,7 +754,7 @@ Hover Effect TV
   }
 
   .llyv-play-btn {
-    cursor: url('/images/rocketcursor2.png'), pointer;
+    cursor: url('./images/rocketcursor2.png'), pointer;
   }
 
   #about-container {
